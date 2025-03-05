@@ -33,6 +33,7 @@
     "start": "vite & npm run watch:css",
     "build": "vite build",
     "serve": "vite preview",
+    "dev": "vite",
     "watch:css": "postcss -w src/css/input.css -o src/css/output.css"
   },
   "eslintConfig": {
