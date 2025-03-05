@@ -1,0 +1,225 @@
+.section__4{
+    /* border: 1px solid red; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section4_innersection_1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section4Paragraph{
+    font-weight: 600;
+}
+.watermark4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensure it is behind all content */
+    opacity: 0.3;
+    /* Adjust this to control the transparency of the  */
+    background-image: url("./assets/svgs/contact.svg");
+    /* Path to your image */
+    background-size: 100%;
+    /* Adjust the size of the logo */
+    background-position: center;
+    /* Place the logo at the center */
+    background-repeat: no-repeat;
+    pointer-events: none;
+    background-size: contain;
+}
+
+.section4_innersection_1_div1{
+    /* height: auto; */
+    /* border: 1px solid rgb(197, 238, 14); */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    column-gap: 7em;
+    row-gap: 12px;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 340px;
+    height: 250px;
+    /* margin: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.CardsIcon{
+    padding: 5px;
+}
+.FIndmetitle{
+    font-size: 1.5em;
+}
+
+.card_innerdiv1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-direction: row;
+}
+form{
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+
+}
+.card1:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(62, 62, 245);
+    transition: all 0.5s;
+}
+.card1:hover .anchoremailtag{
+    transition: all 0.5s;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    
+}
+.card2{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: none;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 5px;
+    
+}
+.Inputfields{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 0.8em;
+    margin: 0.2em;
+    width: 99%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.anchoremailtag{
+    text-decoration: none;
+    color: black;
+}
+.card2_innercard1{
+    width: auto;
+}
+
+.Textarea{
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    outline: none;
+    border: none;
+    width: 96%;
+    height: 100%;
+    padding: 0.3em;
+}
+.innersection_div_1{
+    display: flex;
+    justify-content: flex-end;
+
+    
+}
+.buttonSend{
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+}
+.buttonSend:hover{
+    cursor: pointer;
+}
+
+.section4_heading{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #45505b;
+}
+.Section_title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    /* top: 72px !important; */
+    left: calc(50% - 60px);
+}
+.Section_title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    top: 70.5px;
+    background: #0563bb;
+    left: calc(50% - 20px);
+}
+
+
+.footer{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px solid red; */
+    position: relative;
+    /* bottom: 0; */
+    margin-top: 15px;
+
+}
+.userbutton{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.userbutton:hover{
+    cursor: pointer;
+    color: #0163E0;
+}
+
+
+.section_4_title_div{
+    height: 200px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+.card2{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: none;
+    /* height: 40vh; */
+    row-gap: 12px;
+}
+
+.innersection_div_1{
+    justify-content: center;
+}
+.buttonSend{
+    width: 100%;
+    padding: 1em;
+}
+
+
+}

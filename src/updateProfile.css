@@ -1,0 +1,24 @@
+.updateProfile_mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+    width:99%;
+}
+
+.userProfileChageDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.userProfileUpdateButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}

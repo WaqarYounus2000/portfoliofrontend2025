@@ -1,0 +1,95 @@
+/* General Styling */
+/* body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  } */
+  
+  .resume-container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    /* background: #fff; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+
+  
+  .resume-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .resume-subheading {
+    color: #6c757d;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Content Layout */
+  .resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .resume-left,
+  .resume-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* Section Styling */
+  .resume-section {
+    position: relative;
+    padding-left: 35px;
+    border-left: 3px solid #0563bb;
+    margin-bottom: 30px;
+  }
+  
+  .resume-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #0563bb;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  .resume-section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #0563bb; 
+  }
+  
+  .resume-section-content {
+    font-size: 0.95rem;
+    color: #495057;
+  }
+  
+  /* Align All Text to Left */
+  .resume-section-content,
+  .resume-heading{
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume-content {
+      flex-direction: column;
+    }
+  
+    .resume-left,
+    .resume-right {
+      flex: 1;
+      width: 100%;
+    }
+  }
+  

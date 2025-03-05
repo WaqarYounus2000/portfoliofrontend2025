@@ -1,0 +1,21 @@
+.Addurls_secion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Secion_one{
+    /* border: 2px solid red; */
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.url_inputField{
+    margin: 10px !important;
+}
+

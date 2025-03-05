@@ -1,0 +1,97 @@
+.LoaderSignIn {
+    height: 10px;
+    border: none;
+    outline: none;
+}
+.imageTitle{
+    height: 75px;
+}
+.loginButtonwithborder {
+    padding: 5px 10px;
+    width: 100%;
+    margin: 1rem 0;
+    color: white;
+    outline: none;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+}
+.div_heading{
+    margin-bottom: 5px;
+}
+.EmailDiv,.PasswordDiv{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.loginButton {
+    background-color: transparent !important;
+    padding: 5px 10px;
+    margin: 1rem;
+    outline: none;
+    width:  100%;
+    border: none;
+}
+
+.loginButtonwithborder:hover {
+    cursor: pointer;
+    background-color: rgb(18, 18, 102);
+}
+.InsideCard_1{
+    /* border: 2px solid black; */
+    height: auto;
+    /* padding: 5px; */
+    margin: 15px;
+}
+.InsideCard_2{
+    /* border: 2px solid black; */
+    margin: 15px;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.labels{
+    margin: 5px 0
+}
+.Card {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    /* width: 25%; */
+    height: 60%;
+    border-top: 2px solid blue;
+    /* border: 2px solid red; */
+
+}
+
+.loginSection {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Userregistratointag{
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.Userregistratointag:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+
+    .Card {
+        height: auto;
+        width: 100%;
+        border: none;
+        outline: none;
+        /* border: 2px solid red; */
+        box-shadow: none;
+        
+    }
+    .imageTitle{
+        height: 70px;
+    }
+}

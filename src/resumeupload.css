@@ -1,0 +1,18 @@
+.InputFile_field{
+    color: red;
+}
+
+
+input::file-selector-button{
+    background-color: transparent;
+    border: none;
+    
+}
+
+
+input::file-selector-button:hover{
+    cursor: pointer;
+    
+}
+
+

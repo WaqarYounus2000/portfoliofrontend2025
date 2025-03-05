@@ -1,0 +1,212 @@
+.section_3 {
+    /* background-color: #f8f7fd; */
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.innersection_1 {
+    height: auto;
+    /* border: 2px solid rgb(26, 95, 184); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px 0;
+}
+
+.innersection_1_div_1 {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.cardsforInfo:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(62, 62, 245);
+    transition: all 0.5s;
+}
+
+.projectLinks:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+
+}
+
+.cardsforInfo {
+    /* border: 1px solid black; */
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    width: 320px;
+    height: 250px;
+    /* margin: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+}
+
+
+.section3_heading {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #45505b;
+}
+
+.Section_title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    top: 72px !important;
+    left: calc(50% - 60px);
+}
+
+.Section_title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    left: calc(50% - 20px);
+}
+
+.projectImgeDiv {
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ProjectImageSvg {
+    position: absolute;
+    height: 35rem;
+    position: absolute;
+    top: 50%;
+    filter: opacity(0.4);
+    z-index: 1;
+}
+
+.ProjectPicture {
+    /* border: 1px solid black; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchorTagLinks {
+    color: black;
+    /* border: 1px solid black; */
+    background-color: #ffffff;
+    
+}
+
+.watermark3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensure it is behind all content */
+    opacity: 0.3;
+    /* Adjust this to control the transparency of the  */
+    background-image: url("./assets/svgs/Processcuate.svg");
+    /* Path to your image */
+    background-size: 100%;
+    /* Adjust the size of the logo */
+    background-position: center;
+    /* Place the logo at the center */
+    background-repeat: no-repeat;
+    pointer-events: none;
+    background-size: contain;
+}
+
+
+
+
+/* .anchorTagLinks:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    color: white;
+} */
+
+/* .projectLinks{
+    position: relative;
+    color: black;
+    top: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+.ProjectDiv {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+    /* border: 1px solid red; */
+}
+
+.ProjectCard {
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .cardsforInfo {
+        /* width: 200px; */
+        height: 180px;
+
+        /* margin: 15px; */
+    }
+
+    .innersection_1_div_1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 15px;
+        /* height: 80vh; */
+
+    }
+
+    .ProjectImageSvg {
+        height: 20rem;
+
+    }
+
+    .projectLinks {
+
+        top: 0.5rem;
+
+    }
+
+}

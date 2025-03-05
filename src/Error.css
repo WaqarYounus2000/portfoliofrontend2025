@@ -1,0 +1,39 @@
+.errorsection {
+    /* border: 2px solid red; */
+    height: 90vh;
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    /* border: 2px solid black; */
+}
+.msgheading{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.msgdiv {
+    height: 15vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.errorCode{
+    height: 50vh;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Error{
+    font-size:15rem;
+    color: rgb(150, 9, 9);
+    filter: opacity(0.5);
+}

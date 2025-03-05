@@ -1,0 +1,383 @@
+body {
+
+    background-color: #f2fafc;
+}
+
+.section2 {
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+
+}
+
+.AboutMeDiv {
+    position: relative;
+    top: 45%;
+}
+
+.AboutIntro {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: auto;
+    /* border: 2px solid red; */
+    height: auto;
+}
+
+.aboutinto_div1 {
+    background-color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    /* border: 2px solid red; */
+    text-align: left;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 60%;
+    color: black;
+    height: auto;
+    padding: 15px;
+    border-radius: 40px;
+    z-index: 10;
+}
+
+.aboutinto_div1:hover,
+.educationCard:hover {
+    cursor: pointer;
+    background-color: rgb(62, 62, 245);
+    color: white;
+    transition: all 0.5s;
+}
+
+.aboutmeheading {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #45505b;
+}
+
+.AboutMeDiv h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: -5px;
+    left: calc(50% - 60px);
+}
+
+.AboutMeDiv h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: -6px;
+    left: calc(50% - 20px);
+}
+.IntroHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.HeadingIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.headings_of_Skills h5::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 66px;
+    height: 1px;
+    background: #ddd;
+    /* bottom: 77px; */
+    left: calc(50% - 31px);
+    top: 28px;
+}
+
+.headings_of_Skills h5::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    top: 5px;
+    left: calc(50% - 20px);
+}
+
+.section2_div2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.UnderlineEffect{
+    margin: 5px;
+    padding: 0px;
+}
+
+
+.OuterDiv_1,.innnerDiv_2{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 400px;
+    justify-content: flex-start;
+    /* border: 1px solid rgb(33, 175, 14); */
+
+}
+
+
+.IntroParagraph {
+    line-height: 25px;
+}
+
+
+.watermark0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensure it is behind all content */
+    opacity: 0.3;
+    /* Adjust this to control the transparency of the  */
+    background-image: url("./assets/svgs/about.svg");
+    /* Path to your image */
+    background-size: 100%;
+    /* Adjust the size of the logo */
+    background-position: center;
+    /* Place the logo at the center */
+    background-repeat: no-repeat;
+    pointer-events: none;
+    background-size: contain;
+}
+
+
+
+
+
+
+.innnerDiv_1 {
+    /* background-color: #ffffff; */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;   */
+    color: black;
+    height: auto;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.section_3{
+    display: flex;
+    flex-direction: column;
+}
+
+.educationCard {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  
+    border-radius: 15px;
+    width: 200px;
+    /* height: 100px; */
+    /* border: 1px solid red; */
+    background-color: white;
+    margin: 0;
+    flex-shrink: 2;
+    flex-grow: 1;
+}
+
+
+.educationDiv-info{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+.Institute,.DegreeName{
+    font-weight: 400;
+}
+.Programme{
+    line-height: 30px;
+}
+
+.educationDiv_1 {
+    margin: 0;
+}
+
+.start-end-Date,.DegreeName,.Institute,.Programme{
+    margin: 0;
+}
+
+
+.skills_Div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    flex-direction: column;
+    
+}
+
+.testDiv{
+    flex: 1;
+    min-width: 300px;
+}
+/* .skills_Div {
+    display: grid;
+    grid-template-columns: 45% 27.5% 27.5%;
+
+    
+
+} */
+
+/* .testDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+.headings_of_Skills {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.headings_of_Skills>h5 {
+    font-size: 1rem
+}
+
+.minicard {
+    font-size: clamp(12px, 1vw, 18px);
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 0.2em;
+    border-radius: 80px;
+    background-color: rgb(62, 62, 245);
+}
+
+.TableDiv {
+    /* border: 2px solid rgba(81, 255, 0, 0.788); */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* .MainDivforBack {
+    background-image: url("./assets/svgs/about.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} */
+
+
+.AboutMePicBack {
+
+    position: absolute;
+    filter: opacity(0.3);
+    z-index: 1;
+    left: 5%;
+    top: 5%;
+
+}
+
+
+.techIcons {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 2.5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .section2 {
+        margin-top: 10px;
+    }
+
+    /* .skills_Div {
+        grid: none;
+    } */
+
+    .section2 {
+        grid-template-columns: 100%;
+    }
+
+    .section2_div2 {
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+    }
+
+    .innnerDiv_1,
+    .innnerDiv_2,
+    .OuterDiv_1{
+        
+        /* border: 2px solid green; */
+        width: 95%;
+        height: auto;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .IntroParagraph {
+        font-size: 1.3em;
+        line-height: 30px;
+    }
+
+    .aboutmeheading {
+        font-size: 32px
+    }
+
+
+    .AboutIntro {
+        width: 98vw;
+
+    }
+
+    .aboutinto_div1 {
+        width: 85%;
+    }
+
+    .AboutMePicBack {
+
+        position: absolute;
+        filter: opacity(0.4);
+        z-index: 1;
+        left: -8%;
+        width: 100%;
+        top: 30%;
+
+    }
+
+
+}
+
+
+/* /////////////////////////////////////////////////////////
+ */
+ 
