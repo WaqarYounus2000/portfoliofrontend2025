@@ -46,7 +46,7 @@ function Section1() {
     return (
         <>
             <div className="Div_profiles" style={{
-                backgroundImage: `url(${import.meta.env.VITE_APP_BACKEND_API}${p_info?.profileUrl})`,
+                backgroundImage: `url(${p_info?.profileUrl})`,
                 backgroundSize: "cover",
                 backgroundPosition: "start",
                 backgroundRepeat: "no-repeat",

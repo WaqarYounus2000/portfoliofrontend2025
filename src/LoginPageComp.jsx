@@ -37,11 +37,12 @@ function LoginPageComp() {
 
 
 
-    const handlerSubmission = async () => {
+    const handlerSubmission = async (e) => {
         let email = uCredential.email
         let NAME = email.split("@");  // it returns the array of splited strings,can be accessed by index
         let pass = uCredential.password;
         try {
+            e.preventDefault();
             SetIsLoaded(true)
             const response = await postDataByAxios(`${import.meta.env.VITE_APP_BACKEND_API}/user/login`, uCredential)
             alert(response.data.message)
@@ -49,7 +50,8 @@ function LoginPageComp() {
             SetIsLoaded(false)
 
             if (response?.status === 200) {
-                navigate('/dashboard/')
+                navigate('/dashboard')
+                return
 
             }
 

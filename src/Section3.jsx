@@ -80,7 +80,7 @@ function Section3() {
                                         <CardMedia
                                             component="img"
                                             height="140"
-                                            image={`${import.meta.env.VITE_APP_BACKEND_API}${e?.imageUrl}`}
+                                            image={`${e?.imageUrl}`}
                                             alt="loadingImage..."
                                         />
                                         <CardContent>

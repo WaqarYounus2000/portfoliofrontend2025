@@ -1,18 +1,21 @@
 import "./Section2.css"
-import { FaHtml5, FaReact, FaCss3Alt, FaNodeJs, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaReact, FaCss3Alt, FaNodeJs, FaBootstrap, FaAws, FaPython, FaGithub } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { GrGraphQl } from "react-icons/gr";
 import { BiLogoRedux } from "react-icons/bi";
 import { DiMongodb } from "react-icons/di";
-import { IoLogoFirebase } from "react-icons/io5";
+import { IoLogoFirebase, IoEllipsisHorizontalCircle } from "react-icons/io5";
 
-import { SiExpress, SiMaterialformkdocs, SiAxios, SiReactquery } from "react-icons/si";
+import { SiExpress, SiMaterialformkdocs, SiAxios, SiReactquery, SiAdobeillustrator, SiJsonwebtokens } from "react-icons/si";
 
 import SchoolIcon from '@mui/icons-material/School';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 import InfoIcon from '@mui/icons-material/Info';
+
+
 import { useQuery } from '@tanstack/react-query';
 import { GetDataByAxios } from "./axios/axiosConfig"
+
 
 
 const techSkillsIcons = {
@@ -29,6 +32,13 @@ const techSkillsIcons = {
 
     MongoDb: < DiMongodb className='techIcons' />,
     Firebase: < IoLogoFirebase className='techIcons' />,
+    Illustrator: <SiAdobeillustrator className='techIcons' />,
+    Python: <FaPython className='techIcons' />,
+    Jwt: <SiJsonwebtokens className='techIcons' />,
+    Nodemailer: <IoEllipsisHorizontalCircle className='techIcons' />,
+    Multer: <IoEllipsisHorizontalCircle className='techIcons' />,
+    Aws: <FaAws className='techIcons' />,
+    Github: <FaGithub className='techIcons' />,
 
 
     ExpressJs: < SiExpress className='techIcons' />,
@@ -36,6 +46,8 @@ const techSkillsIcons = {
 }
 
 function Section2() {
+
+
 
 
     const fetchData = async () => {
@@ -140,6 +152,7 @@ function Section2() {
                                     <div className="TableDiv">
 
                                         {
+
                                             frontendSkill?.map((e, i) => {
 
                                                 const iconComp = techSkillsIcons[e]

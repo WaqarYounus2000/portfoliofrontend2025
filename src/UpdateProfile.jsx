@@ -8,17 +8,8 @@ import { postDataByAxios, putDataByAxios } from './axios/axiosConfig';
 
 const UpdateProfile = () => {
 
-
-
-
-
-
-
-
     const [UpdatedValue, setUpdatedValue] = useState()
     const [fieldPath, setFieldPath] = useState(); // Field path to update
-    const [collectionName] = useState("resumeData"); // Collection name
-    const [documentId] = useState("uMoW81KmEJQhFqGTWElb"); // Document ID
 
 
 
@@ -34,7 +25,6 @@ const UpdateProfile = () => {
         console.log("field is updated at:" + fieldPath + ":" + UpdatedValue)
         try {
             const response = await putDataByAxios(`${import.meta.env.VITE_APP_BACKEND_API}/resume`, { fieldPath, UpdatedValue });
-
             const imageUrl = response.data.imageUrl;
             setUpdatedValue(imageUrl)
             alert(response?.data?.message)
@@ -55,14 +45,14 @@ const UpdateProfile = () => {
         const file = event.target.files[0];
         if (!file) return;
         const formData = new FormData();
-        formData.append('projectImage', file);
+        formData.append('profileImage', file);
         try {
-            const response = await postDataByAxios(`${import.meta.env.VITE_APP_BACKEND_API}/upload/image`, formData);
+            const response = await postDataByAxios(`${import.meta.env.VITE_APP_BACKEND_API}/upload/profile`, formData);
 
             const imageUrl = response.data.imageUrl;
             setUpdatedValue(imageUrl)
         } catch (error) {
-            console.error('Error uploading project image:', error.response?.data || error.message);
+            console.error('Error uploading profile image:', error.response?.data || error.message);
         } finally {
 
         }

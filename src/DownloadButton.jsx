@@ -37,7 +37,7 @@ function DownloadButton() {
 
 
     const DownlaodResume = async () => {
-        window.open(import.meta.env.VITE_APP_BACKEND_API + resumeData.pdflink, '_blank'); 
+        window.open(resumeData.pdflink, '_blank'); 
         
 
 
